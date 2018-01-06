@@ -1,0 +1,11 @@
+# Schema
+
+## User
+| name | email | password | id | create_time | update_time |
+|---|---|---|---|---|---|
+| dasheng | kaichaosuna@gmail.com | password | ObjectId("5a5014acc65968436e8c5a7a") | 2017-10-01 10:10:10 | 2017-10-01 10:10:10 | 
+
+## IOTA Address
+| id | deposite_address | withdraw_address | amount | status | create_time | update_time |
+|---|---|---|---|---|---|
+| ObjectId("5a5014acc65968436e8c5a7a") | xxx...xxx | 100 | pending | 2017-10-01 10:10:10 | 2017-10-01 10:10:10 | 
