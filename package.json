@@ -1,0 +1,22 @@
+{
+  "name": "fund-management",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashengSun/fund-management.git"
+  },
+  "keywords": [
+    "IOTA"
+  ],
+  "author": "Kaichao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dashengSun/fund-management/issues"
+  },
+  "homepage": "https://github.com/dashengSun/fund-management#readme"
+}
