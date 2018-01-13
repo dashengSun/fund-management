@@ -12,14 +12,16 @@ console.log("iota version:", iota.version);
 
 const seed = process.env.SEED;
 
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://localhost/test', { useMongoClient: true });
 
 app.get("/", (req, res) => res.send("hello, weiOTA"));
 
 app.get("/address/generate", (req, res) => {
   const addrResult = addr.generateAddr(iota, seed);
   addrResult.then(address => {
-    return res.send({'address': address});
+    addr.saveAddr(mongoose, address).then(_ => {
+      return res.send({'address': address, 'status': "saved"});
+    })
   });
 });
 
